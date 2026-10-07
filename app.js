@@ -407,8 +407,8 @@ function renderSettings(){
 }
 function startDemo(){
   const cards=D.cases.map(c=>`<div class="card"><span class="tag warn">示例案例</span><h3>${esc(c.title)}</h3><p>${courseName(c.course)}</p><button class="btn secondary" data-action="launch-demo-case" data-id="${c.id}">开始体验</button></div>`).join("");
-  view.innerHTML=`<div class="card hero"><h2>比赛演示模式</h2><p>选择一个案例，评委可以真实输入回答。过程会生成演示复盘卡，但不会计入真实学习成效。</p></div><div class="grid grid-3" style="margin-top:16px">${cards}</div>`;
-  pageTitle.textContent="比赛演示";pageEyebrow.textContent="3-5步体验核心价值";
+  view.innerHTML=`<div class="card hero"><h2>智能体验模式</h2><p>选择一个案例，评委可以真实输入回答。过程会生成演示复盘卡，但不会计入真实学习成效。</p></div><div class="grid grid-3" style="margin-top:16px">${cards}</div>`;
+  pageTitle.textContent="智能体验";pageEyebrow.textContent=
 }
 function launchDemo(id){
   const c=D.cases.find(x=>x.id===id);if(!c)return;
