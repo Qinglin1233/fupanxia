@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="复盘侠 - 高校个性化学习复盘智能体比赛演示版" />
+  <title>复盘侠 · 教学智能体</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-logo">复</div>
+        <div>
+          <h1>复盘侠</h1>
+          <p>个性化学习复盘智能体</p>
+        </div>
+      </div>
+
+      <button class="demo-entry" data-action="start-demo">🎯 比赛演示</button>
+
+      <nav id="mainNav" class="nav"></nav>
+
+      <div class="sidebar-footer">
+        <div class="mode-badge">纯前端比赛版</div>
+        <small>数据仅保存在当前浏览器</small>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn mobile-only" id="menuBtn">☰</button>
+        <div>
+          <div class="eyebrow" id="pageEyebrow">学习中心</div>
+          <h2 id="pageTitle">学习首页</h2>
+        </div>
+        <div class="top-actions">
+          <span id="storageState" class="save-state">● 已启用本地保存</span>
+          <button class="ghost-btn" data-action="open-help">使用说明</button>
+        </div>
+      </header>
+
+      <section id="view" class="view"></section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <div id="modalRoot"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
